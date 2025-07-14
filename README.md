@@ -18,8 +18,7 @@
 
     ### Outcome: Basic firewall management skills and understanding of network traffic filtering.
 
-## Port 23 is used by the Telnet protocol, which enables remote connections to a computer. But here’s the 
-problem: 
+## Port 23 is used by the Telnet protocol, which enables remote connections to a computer. But here’s the problem: 
 
       Telnet is unencrypted → anything typed (username, password, commands) is sent in plain text over the network. 
     Attackers can sniff this data using tools like Wireshark or tcpdump. 
@@ -38,5 +37,4 @@ Once you apply this rule in Windows Firewall or UFW:
     It's part of a "default-deny" security model, where you only open what is needed. 
     Even if Telnet is not running, blocking the port prevents future vulnerabilities if someone accidentally enables it. 
 
-### After blocking port 23, you stop any remote Telnet attempts to your machine, securing it from a legacy and 
-insecure protocol. This is a proactive firewall rule used in real-world system hardening. 
+### After blocking port 23, you stop any remote Telnet attempts to your machine, securing it from a legacy and insecure protocol. This is a proactive firewall rule used in real-world system hardening. 
